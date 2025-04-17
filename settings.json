@@ -1,0 +1,249 @@
+{
+  "wall_paper": {
+  },
+  "language": "ja",
+  "ja": {
+    "init": {
+      "geometry": "200x280"
+    },
+    "create_widget": {
+      "setting": "設定",
+      "language": "言語設定",
+      "end": "終了",
+      "listbox_x": "5",
+      "listbox_y": "5",
+      "button1": "壁紙追加",
+      "button1_x": "140",
+      "button1_y": "252",
+      "button2": "入れ替え",
+      "button2_x": "80",
+      "button2_y": "252",
+      "check": "画像確認",
+      "check_x": "5",
+      "check_y": "252"
+    },
+    "select_file": {
+      "title": "選択",
+      "geometry": "200x100",
+      "label": "表示時のニックネームを決めてください",
+      "label_x": "10",
+      "label_y": "10",
+      "entry_x": "12",
+      "entry_y": "32",
+      "button": "決定",
+      "button_x": "160",
+      "button_y": "30",
+      "e_title": "エラー",
+      "e_text": "この名前はすでに使用されています"
+    },
+    "swap": {
+      "title": "交換",
+      "geometry": "190x85",
+      "label": "入れ替える壁紙を選択してください",
+      "label_x": "5",
+      "label_y": "5",
+      "combo1_x": "5",
+      "combo1_y": "30",
+      "combo2_x": "5",
+      "combo2_y": "55",
+      "button": "決定",
+      "button_x": "151",
+      "button_y": "52",
+      "e_title": "エラー",
+      "e_text": "同じ壁紙は選択できません\nもう一度選びなおしてください"
+    },
+    "image_base": {
+      "title": "画像表示",
+      "geometry": "384x216",
+      "canvas_text": "ここに選択した画像が表示されます",
+      "font": "15"
+    },
+    "change": {
+      "e_title": "エラー",
+      "e_text": "対象ファイルが存在しないか参照できません\n一度削除してもう一度壁紙を設定し直してください"
+    }
+  },
+  "en": {
+    "init": {
+      "geometry": "200x280"
+    },
+    "create_widget": {
+      "setting": "settings",
+      "language": "language",
+      "end": "quit",
+      "listbox_x": "5",
+      "listbox_y": "5",
+      "button1": "add",
+      "button1_x": "140",
+      "button1_y": "252",
+      "button2": "change",
+      "button2_x": "80",
+      "button2_y": "252",
+      "check": "check",
+      "check_x": "5",
+      "check_y": "252"
+    },
+    "select_file": {
+      "title": "select",
+      "geometry": "200x100",
+      "label": "Please enter nickname.",
+      "label_x": "10",
+      "label_y": "10",
+      "entry_x": "12",
+      "entry_y": "32",
+      "button": "OK",
+      "button_x": "160",
+      "button_y": "30",
+      "e_title": "error",
+      "e_text": "Already in use"
+    },
+    "swap": {
+      "title": "swap",
+      "geometry": "190x85",
+      "label": "Please set a wallpaper to replace",
+      "label_x": "5",
+      "label_y": "5",
+      "combo1_x": "5",
+      "combo1_y": "30",
+      "combo2_x": "5",
+      "combo2_y": "55",
+      "button": "OK",
+      "button_x": "151",
+      "button_y": "52",
+      "e_title": "error",
+      "e_text": "You cannot select the same wallpaper.\nPlease try setting the wallpaper again."
+    },
+    "image_base": {
+      "title": "show image",
+      "geometry": "384x216",
+      "canvas_text": "Your selected image will appear here",
+      "font": "17"
+    },
+    "change": {
+      "e_title": "error",
+      "e_text": "The target file does not exist or cannot be referenced.\nPlease delete it and set it again."
+    }
+  },
+  "kan": {
+    "init": {
+      "geometry": "200x280"
+    },
+    "create_widget": {
+      "setting": "설정",
+      "language": "언어 설정",
+      "end": "종료",
+      "listbox_x": "5",
+      "listbox_y": "5",
+      "button1": "추가",
+      "button1_x": "140",
+      "button1_y": "252",
+      "button2": "교체",
+      "button2_x": "100",
+      "button2_y": "252",
+      "check": "이미지 확인",
+      "check_x": "5",
+      "check_y": "252"
+    },
+    "select_file": {
+      "title": "선택",
+      "geometry": "200x100",
+      "label": "표시시의 닉네임을 결정해 주세요",
+      "label_x": "10",
+      "label_y": "10",
+      "entry_x": "12",
+      "entry_y": "32",
+      "button": "결정",
+      "button_x": "160",
+      "button_y": "30",
+      "e_title": "오류",
+      "e_text": "이 이름은 이미 사용 중입니다."
+    },
+    "swap": {
+      "title": "교환",
+      "geometry": "190x85",
+      "label": "교체 할 배경 화면을 선택하십시오",
+      "label_x": "5",
+      "label_y": "5",
+      "combo1_x": "5",
+      "combo1_y": "30",
+      "combo2_x": "5",
+      "combo2_y": "55",
+      "button": "결정",
+      "button_x": "151",
+      "button_y": "52",
+      "e_title": "오류",
+      "e_text": "같은 배경 화면을 선택할 수 없습니다.\n다시 설정해 주세요."
+    },
+    "image_base": {
+      "title": "이미지 표시",
+      "geometry": "384x216",
+      "canvas_text": "여기에 선택한 이미지가 표시됩니다.",
+      "font": "15"
+    },
+    "change": {
+      "e_title": "오류",
+      "e_text": "대상 파일이 없거나 참조할 수 없음\n한 번 삭제하고 다시 배경화면을 다시 설정하세요."
+    }
+  },
+  "es": {
+    "init": {
+      "geometry": "200x280"
+    },
+    "create_widget": {
+      "setting": "configuración",
+      "language": "Configuración de idioma",
+      "end": "fin",
+      "listbox_x": "5",
+      "listbox_y": "5",
+      "button1": "suma",
+      "button1_x": "140",
+      "button1_y": "252",
+      "button2": "Reemplazo",
+      "button2_x": "70",
+      "button2_y": "252",
+      "check": "mostrar",
+      "check_x": "5",
+      "check_y": "252"
+    },
+    "select_file": {
+      "title": "elección",
+      "geometry": "220x70",
+      "label": "Por favor, elija un apodo para mostrar",
+      "label_x": "10",
+      "label_y": "10",
+      "entry_x": "12",
+      "entry_y": "32",
+      "button": "decisión",
+      "button_x": "160",
+      "button_y": "30",
+      "e_title": "error",
+      "e_text": "Este nombre ya está en uso"
+    },
+    "swap": {
+      "title": "intercambio",
+      "geometry": "300x85",
+      "label": "Seleccione el fondo de pantalla que desea reemplazar",
+      "label_x": "5",
+      "label_y": "5",
+      "combo1_x": "5",
+      "combo1_y": "30",
+      "combo2_x": "5",
+      "combo2_y": "55",
+      "button": "decisión",
+      "button_x": "151",
+      "button_y": "52",
+      "e_title": "error",
+      "e_text": "No puedes seleccionar el mismo fondo de pantalla.\nPor favor seleccione nuevamente"
+    },
+    "image_base": {
+      "title": "Visualización de imágenes",
+      "geometry": "384x216",
+      "canvas_text": "La imagen que seleccionaste aparecerá aquí",
+      "font": "15"
+    },
+    "change": {
+      "e_title": "error",
+      "e_text": "El archivo de destino no existe o no se puede referenciar.\nElimínelo y configúrelo nuevamente."
+    }
+  }
+}
