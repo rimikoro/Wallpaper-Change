@@ -1,6 +1,7 @@
 import ctypes
 import json
 import os
+import sys
 from tkinter import *
 from tkinter import filedialog, messagebox, ttk
 from PIL import ImageTk, Image
@@ -8,9 +9,9 @@ from PIL import ImageTk, Image
 class WallpaperChange(Frame):
     def __init__(self, master):
         super().__init__(master)
-        self.pack()        
-        
-        with open("settings.json", "r", encoding="utf-8") as f:
+        self.pack()
+        self.json_name = self.resource_path("settings.json")
+        with open(self.json_name, "r", encoding="utf-8") as f:
             self.settings = json.load(f)
         self.file = self.settings["wall_paper"]
         self.language = self.settings["language"]
@@ -20,6 +21,11 @@ class WallpaperChange(Frame):
         self.master.title("wallpaper change")
         self.master.resizable(False, False)
         self.create_widget()
+    
+    # jsonファイルの位置特定
+    def resource_path(self, filename):
+        base_path = os.path.dirname(sys.argv[0])
+        return os.path.join(base_path, filename)
     
     # ウィジェットの作成
     def create_widget(self):
@@ -62,7 +68,7 @@ class WallpaperChange(Frame):
         else:
             self.master.destroy()
             self.settings["language"] = language
-            with open("settings.json", "w", encoding="utf-8") as f:
+            with open(self.json_name, "w", encoding="utf-8") as f:
                     json.dump(self.settings, f, indent=2, ensure_ascii=False)
             main()
     
@@ -73,7 +79,7 @@ class WallpaperChange(Frame):
             if entry.get() not in self.file.keys():
                 self.file[entry.get()] = filename
                 self.settings["wall_paper"] = self.file
-                with open("settings.json", "w", encoding="utf-8") as f:
+                with open(self.json_name, "w", encoding="utf-8") as f:
                     json.dump(self.settings, f, indent=2, ensure_ascii=False)
                 self.listbox.insert(END, entry.get())
                 select_frame.destroy()
@@ -116,7 +122,7 @@ class WallpaperChange(Frame):
                 for name in self.file.keys():
                     self.listbox.insert(END, name)
                 self.settings["wall_paper"] = self.file
-                with open("settings.json", "w", encoding="utf-8") as f:
+                with open(self.json_name, "w", encoding="utf-8") as f:
                     json.dump(self.settings, f, indent=2, ensure_ascii=False)
                 swap_frame.destroy()
         if len(self.file) < 2:
@@ -181,7 +187,7 @@ class WallpaperChange(Frame):
         self.file.pop(event.widget.get(event.widget.curselection()))
         event.widget.delete(event.widget.curselection())
         self.settings["wall_paper"] = self.file
-        with open("settings.json", "w", encoding="utf-8") as f:
+        with open(self.json_name, "w", encoding="utf-8") as f:
             json.dump(self.settings, f, indent=2, ensure_ascii=False)
 
     # Enterを押下した時のイベント
